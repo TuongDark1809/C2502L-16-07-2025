@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            font-family: sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        form {
+            display: flex;
+            gap: 20px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 50px;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" id="name" placeholder="name">
+        <input type="number" id="age" placeholder="age" min="0">
+        <div>
+            <input type="radio" id="gender" name="gender" value="Nam">
+            <label for="gender">Male</label>
+            <input type="radio" id="gender" name="gender" value="Nữ">
+            <label for="gender">Female</label>
+        </div>
+        <button type="submit" id="submitBtn">Add</button>
+    </form>
+    <form id="ageSearch">
+        <input type="number" id="ageInput" placeholder="Search your age" min="0">
+        <button type="submit">Search</button>
+    </form>
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Tuổi</th>
+                <th>Giới tính</th>
+                <th>Xóa</th>
+                <th>Sửa</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <script src="script1.js"></script>
+</body>
+
+</html>
