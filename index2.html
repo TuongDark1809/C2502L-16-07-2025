@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <style>
+        table {
+            font-family: sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+        form {
+            display: flex;
+            gap: 20px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 50px;
+        }
+
+        .green {
+            color: green;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="taskName" placeholder="Please enter your task...">
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Job</th>
+                <th>Delete</th>
+                <th>Edit</th>
+                <th>Complete</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <script src="script2.js"></script>
+</body>
+</html>
